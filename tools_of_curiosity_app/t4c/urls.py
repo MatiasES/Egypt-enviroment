@@ -13,4 +13,5 @@ urlpatterns = [
     path('designsprint/', views.designsprint, name='designsprint'),
     path('designsprint2/', views.designsprint2, name='designsprint2'),
     path('default/', views.default, name='default'),
+    path('Egypt/', views.Egypt, name='Egypt'),
 ]

@@ -60,3 +60,8 @@ def default(request):
     pprint(request)
     context = {}
     return render(request, "t4c/default.html", context)
+def Egypt(request):
+    print("t4c/views.py @ Egypt()")
+    pprint(request)
+    context = {}
+    return render(request, "t4c/Egypt.html", context)
