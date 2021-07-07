@@ -54,3 +54,9 @@ def designsprint2(request):
 
 def OBSOLETEindex(request):
     return HttpResponse("Hello, world. You're at the t4c index.")
+
+def default(request):
+    print("t4c/views.py @ default()")
+    pprint(request)
+    context = {}
+    return render(request, "t4c/default.html", context)
