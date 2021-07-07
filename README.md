@@ -10,8 +10,9 @@ This repository hold everything for the Tools Of Curiosity game.
     * If you have already cloned this repo, go into it and run `git lfs pull`
 
 ## Set up Python
+From the tools-of-curiosity directory:
 * Create a python virtualenv
-    * `virtualenv --python=python3 venv`
+    * `python3 -m venv venv`
 * Install python requirements
     * `./venv/bin/pip install -r requirements.txt`
 
@@ -23,6 +24,7 @@ This repository hold everything for the Tools Of Curiosity game.
    * Follow setup instructions here: https://ankane.org/git-lfs-on-heroku
 
 ## Running Locally
+From the tools-of-curiosity directory:
 * `source ./venv/bin/activate`
 * `heroku local` 
 
