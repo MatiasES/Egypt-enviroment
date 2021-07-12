@@ -15,6 +15,18 @@
 <!-- cursor activated from mouse position; only intersects objects with "link" component added (the <a-link> tag) -->
 <!-- environments featured: default, forest, egypt, goldmine, arches, japan, volcano -->
 <img id="Egypt_sky" src="/static/admin/assets/new_egypt_skyline.png">
+<a-asset-item
+	id="pyramid"
+	scale="0.01"
+	src="/static/admin/assets/Henry's pyramid.glb"
+	position="0 0 0"
+				></a-asset-item>
+<a-asset-item
+	id="scorpion"
+	scale="0.01"
+	src="/static/admin/assets/Henry's scorpidan.glb"
+	position="0 0 0"
+				></a-asset-item>
 
   <a-sky scale = "0.01 0.01" src="#Egypt_sky"></a-sky>
 
@@ -22,7 +34,7 @@
 	  
 	<a-assets>
         <img id="previewDefault"  src="https://cdn.glitch.com/487be84f-e867-4b44-b13a-b5ffe8b37023%2Fsky.jpeg?v=1618522282843">
-        
+		
 	</a-assets>
 
 <!-- note: raycast issue (link still active) after walking through portal -->
@@ -34,7 +46,8 @@
 shadow = "receive: true"></a-entity>
 <a-entity light = "type: point; intensity: 0.6; distance: 0; decay: 1; castShadow: true" 
  position= "0 100 0"></a-entity>
-
+ <a-entity gltf-model="#pyramid" position="0 1 0" rotation="" scale="1 1 1" animation-mixer=""></a-entity>
+ <a-entity gltf-model="#scorpion" position="-20 1 0" rotation="" scale="1 1 1" animation-mixer=""></a-entity>
 </a-scene>
 
 </body>
