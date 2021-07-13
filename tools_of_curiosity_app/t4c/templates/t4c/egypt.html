@@ -22,9 +22,23 @@
 	position="0 0 0"
 				></a-asset-item>
 <a-asset-item
-	id="scorpion"
+	id="scorpion_attack"
 	scale="0.01"
-	src="/static/admin/assets/Henry's scorpidan.glb"
+	src="/static/admin/assets/Scorpian attack.glb"
+	position="0 0 0"
+				></a-asset-item>
+
+<a-asset-item
+	id="scorpidan_Dying"
+	scale="0.01"
+	src="/static/admin/assets/scorpidan Dying.glb"
+	position="0 0 0"
+				></a-asset-item>
+				
+<a-asset-item
+	id="scorpidan_moving"
+	scale="0.01"
+	src="/static/admin/assets/scorpidan moving.glb"
 	position="0 0 0"
 				></a-asset-item>
 
@@ -46,8 +60,28 @@
 shadow = "receive: true"></a-entity>
 <a-entity light = "type: point; intensity: 0.6; distance: 0; decay: 1; castShadow: true" 
  position= "0 100 0"></a-entity>
- <a-entity gltf-model="#pyramid" position="-40 0 50" rotation="" scale="1 1 1" animation-mixer=""></a-entity>
- <a-entity gltf-model="#scorpion" position="-45 -0.5 -40" rotation="" scale="1 1 1" animation-mixer=""></a-entity>
+ <a-entity gltf-model="#pyramid" 
+ position="-40 0 50" 
+ rotation="" 
+ scale="1 1 1" 
+ animation-mixer></a-entity>
+ <a-entity 
+ gltf-model="#scorpion_attack" 
+ position="-45 -0.5 -40" 
+ rotation="" 
+ scale="1 1 1" 
+ animation-mixer></a-entity>
+ <a-entity 
+ gltf-model="#scorpidan_Dying" 
+ position="0 0 0" 
+ rotation="" 
+ scale="1 1 1" 
+ animation-mixer></a-entity>
+ <a-entity 
+ gltf-model="#scorpidan_moving" 
+ position="10 -0.5 -40" 
+ rotation="" scale="1 1 1" 
+ animation-mixer></a-entity>
 </a-scene>
 
 </body>
