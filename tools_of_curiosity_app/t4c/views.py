@@ -64,4 +64,4 @@ def Egypt(request):
     print("t4c/views.py @ Egypt()")
     pprint(request)
     context = {}
-    return render(request, "t4c/Egypt.html", context)
+    return render(request, "t4c/egypt.html", context)
